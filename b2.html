@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = [2,3,6,8,9,10,11,22,26,30];
+    let a = +prompt(' 1 giá trị');
+    let count = 0
+    function Timvitri(a) {
+        for (let i=0;i<p.length;i++) {
+            if (a ===p[i]) {
+                count = count+1;
+                alert(p[i] + "có trong mảng" + i)
+            }
+        }
+        if (count === 0) {
+            alert("không có trong mảng")
+        }
+    }
+    Timvitri(a)
+</script>
+</body>
+</html>

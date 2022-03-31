@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="a">Nhập a:</label>
+<input id="a" type="text" oninput="timnghiem()">
+<label for="b">Nhập b:</label>
+<input id="b" type="text" oninput="timnghiem()">
+<h3 id="result"></h3>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let result = document.getElementById("result");
+    function timnghiem() {
+        let aa = +a.value;
+        let bb = +b.value;
+        if (aa===0 && bb===0) {
+            result.innerText = "Phương trình có vô số nghiệm";
+        }
+        else if (aa === 0){
+            result.innerText = "Phương trình vô nghiệm";
+        }
+        else {
+            result.innerText = "Phương trình có nghiệm là: " + (bb/aa);
+        }
+    }
+</script>
+</body>
+</html>
